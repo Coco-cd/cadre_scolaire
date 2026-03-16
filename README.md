@@ -1,4 +1,4 @@
-__🎓 Travaux BUT MMI — Semestre 1__
+🎓 Travaux BUT MMI — Semestre 1
 
 Fichiers réalisés dans le cadre de ma formation Bachelor Universitaire de Technologie — Métiers du Multimédia et de l'Internet (BUT MMI), durant le Semestre 1.
 
