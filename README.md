@@ -7,14 +7,15 @@ Fichiers réalisés dans le cadre de ma formation Bachelor Universitaire de Tech
 Ce dépôt regroupe les projets, exercices et rendus produits durant mes années de BUT MMI. Ces travaux ont été réalisés à des fins pédagogiques, dans le cadre de mes cours et de mes SAÉ (Situations d'Apprentissage et d'Évaluation).
 
 🗂️ Contenu
-Les fichiers présents dans ce dépôt sont mes réalisation durant les 3 ans de ma formation, les langage utilisé sont : 
+Les fichiers présents dans ce dépôt sont mes réalisation durant les 3 ans de ma formation, les langages utilisé sont : 
   - Le HTML
   - Le CSS
   - Le PHP
+  - Le TWIG
 
 
-⚠️ Avertissement
-Ces fichiers sont des travaux d'étudiant. Ils peuvent contenir des erreurs, des expérimentations ou du code non optimisé — c'est tout à fait normal, c'est l'essence même de l'apprentissage. 🙂
+⚠️ Avertissement 
+Ces fichiers sont mes travaux d'étudiant de début de formation. Ils peuvent contenir des erreurs, des expérimentations et/ou du code non optimisé — c'est tout à fait normal, c'est l'essence même de l'apprentissage. 🙂
 
 👤 Auteur
 Étudiant en BUT MMI
