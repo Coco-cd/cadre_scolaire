@@ -1,0 +1,71 @@
+{% extends "base.twig" %}
+
+{% block main %}
+
+</div>
+<h1>Les DLC</h1>
+<p>
+    L'expression contenu téléchargeable additionnel (CTA) (plus connue sous la forme du sigle anglais DLC, pour «
+    downloadable content ») désigne toute extension d'un programme informatique ou d'un jeu vidéo qu'il est possible de
+    télécharger, gratuitement ou non.
+</p>
+<p>
+    La majorité des DLC sont des extensions de jeux vidéo. Si le DLC est payant, son paiement peut s'effectuer sous
+    forme de micropaiement, par carte bancaire ou encore en échange de points-cadeaux accumulés en achetant d'autres
+    produits, comme permis par exemple sur les offres commerciales des consoles Xbox, Xbox 360 et Xbox One de Microsoft.
+</p>
+<p>
+    N'inclus pas les DLC gratuits car ils sont automatiquement installés à l'achat du jeu
+</p>
+<ul class="menu">
+    {% for element in dlcaccessory %}
+    <li><a href="#{{element.id}}">{{element.titre}}</a></li>
+    {% endfor %}
+</ul>
+{% for element in dlcaccessory %}
+
+<div class="dlc">
+
+    <img src="{{ element.image}}" alt="{{ element.titre }}">
+
+
+    <div class="info">
+        <h2 id="{{ element.id }}">{{ element.titre }}</h2>
+        <h3>{{ element.soustitre1 }}</h3>
+        <p>{{ element.texte }}</p>
+        <h3>{{ element.soustitre2 }}</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Accessoires</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in element.tableau %}
+                {% if row.categorie is defined %}
+                <tr>
+                    <td>{{ row.categorie }}</td>
+                    <td>{{ row.accessoires }}</td>
+                </tr>
+                {% elseif row.marque is defined %}
+                <tr>
+                    <td>{{ row.marque }}</td>
+                    <td>{{ row.modeles }}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h3>{{ element.prix}}</h3>
+        <a href="{{element.lien}}" target="_blank"><button><i class="bi bi-steam"></i> {{ element.achat}}</button></a>
+    </div>
+
+</div>
+{% endfor %}
+
+
+{% endblock main %}
+
+{% block title %}DLC Accessoire{% endblock title %}
