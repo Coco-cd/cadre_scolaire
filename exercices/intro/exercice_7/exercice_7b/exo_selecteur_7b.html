@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 7b - sélecteurs</title>
+  <style>
+    body,
+    h1,
+    h2,
+    p {
+      padding: 8px;
+      font-size: 24px
+    }
+
+    body {
+      border: 5px solid green;
+      margin: 30px;
+    }
+
+    p {
+      border: 5px solid blue;
+    }
+
+    h1 {
+      border: 5px solid yellow;
+    }
+
+    button {
+      background-color: aqua;
+      border: none;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+
+    h1+p {
+      color: purple;
+    }
+
+    ol>li {
+      color: orange;
+    }
+
+    ol>li:first-child {
+      color: red
+    }
+
+    p b {
+      color: blue
+    }
+
+    p+p+p {
+      color: green;
+    }
+
+    p+p+p b {
+      color: yellow;
+    }
+
+    p~p {
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>mon titre h1</h1>
+  <p>ceci est mon <b>1er paragraphe</b></p>
+  <p>ceci est mon <b>2è paragraphe</b></p>
+  <p>ceci est mon <b>3è paragraphe</b></p>
+  <h2> Des listes à puces </h2>
+  <ul>
+    <li>liste à puce <i>niveau 1</i>
+      <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+      </ol>
+    </li>
+    <li>liste à puce <i>niveau 1</i></li>
+  </ul>
+  <p>encore un paragraphe</p>
+
+  <footer>
+    <button onclick="window.location.href='../../exercice.html'">Retour à la page principale</button>
+  </footer>
+</body>
+
+</html>
