@@ -1,0 +1,269 @@
+/* GENERAL */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+body {
+    background-color: #858685;
+    color: lightgray;
+	width: 1080px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: black;
+	font-size: 28px;
+	font-weight: bold;
+	background-color: #F4C301;
+	text-align: center;
+	padding: 15px 0;
+}
+
+h2 {
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: #E4C95D;
+	padding: 4px 0 4px 20px;
+}
+
+p {
+	text-align: justify;
+}
+
+section {
+	margin-top: 60px;
+	padding: 15px;
+}
+
+
+/* MAIN */
+/* MAIN */
+/* Couleurs par section (section:nth-child(n)) — ajustez les alphas si besoin */
+section:nth-child(1) {
+	background-color: rgba(255, 99, 71, 0.22); /* Tomato - clair */
+	color: #000;
+}
+
+section:nth-child(2) {
+	background-color: rgba(126, 252, 0, 0.22); /* Vert clair */
+	color: #000;
+}
+
+section:nth-child(3) {
+	background-color: rgba(0, 255, 255, 0.20); /* Cyan pâle */
+	color: #000;
+}
+
+section:nth-child(4) {
+	background-color: rgba(70, 130, 180, 0.18); /* SteelBlue */
+	color: #fff;
+}
+
+section:nth-child(5) {
+	background-color: rgba(147, 112, 219, 0.18); /* MediumPurple */
+	color: #fff;
+}
+
+section:nth-child(6) {
+	background-color: rgba(255, 165, 0, 0.20); /* Orange */
+	color: #000;
+}
+
+section:nth-child(7) {
+	background-color: rgba(255, 223, 70, 0.20); /* Jaune pâle */
+	color: #000;
+}
+
+section:nth-child(8) {
+	background-color: rgba(60, 60, 60, 0.18); /* Gris foncé pâle */
+	color: #fff;
+}
+
+main p::after { /* -> seulement les <p> dans le <main> sont concerné */
+	content: "Read more";
+	color: blue;
+	text-decoration: underline;
+	cursor: grab;
+}
+
+.texte {
+	color: #796060;
+	font-size: 12px;
+}
+
+.texte::first-letter {
+	font-size: 24px;
+	color: #E4C95D;
+	font-weight: bold;
+}
+
+/* --FICHE DU FILM / FICHE TECHNIQUE-- */
+.liste_fiche span,
+.technique span {
+	font-weight: bold;
+}
+
+/* --FICHE DU FILM-- */
+.liste_fiche li {
+	list-style-type: none; /* on enlève les numéros de la liste <ol> pour pouvoir afficher ceux du compteur */
+	counter-increment: increment; /* on incrémente le compteur à chaque nouveau <li> */
+	margin-bottom: 10px;
+}
+
+.liste_fiche li::before {
+	content: counter(increment); /* contenu : on affiche les numéros du compteur */
+	background: #678;
+	border-radius: 60px;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	display: inline-block; /* permet que la largeur du ::before soit prise en compte */
+	width: 40px;
+	margin-right: 8px;
+	padding: 2px 0;
+}
+
+/* --SYNOPSIS-- */
+.bloc_images {
+	display: flex;
+	justify-content: space-around;
+	align-items: center; /* si on ne centre pas l'image verticalement la plus petite image des deux s'allongera */
+}
+
+/* --DEVELOPPEMENT-- */
+.contenu_developpement {
+	display: flex;
+	justify-content: space-between;
+	gap: 60px;
+	padding: 5px 60px 60px 60px;
+}
+
+.contenu_developpement-textes {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contenu_developpement-textes a {
+	padding: 10px 40px;
+	background: rgb(61, 63, 61);
+	border-radius: 20px;
+	cursor: wait;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 10px;
+	display: block;
+}
+
+.contenu_developpement-textes a:hover {
+	background: white;
+	color: rgb(61, 63, 61);
+}
+
+.contenu_developpement-image {
+	border: 10px double gold;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* --FICHE TECHNIQUE-- */
+.technique li {
+	list-style: square;
+}
+
+.liste_musiques li:hover {
+	color: #990033;
+	background-color: #FFFF99;
+}
+
+/* Met chaque 3ème musique en italique */
+.liste_musiques li:nth-child(3n) {
+    font-style: italic;
+}
+
+/* --MUSIQUES-- */
+.section_musiques img {
+	display: block;
+	margin: 0 auto;
+}
+
+.liste_musiques span {
+	color: darkblue;
+	font-weight: bold;
+}
+
+/* --BLOG-- */
+.section_blog article {
+	border: 4px dotted red;
+	padding: 20px;
+	width: 250px;
+}
+
+.liste_articles {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* --ACTEURS / LIRVES-- */
+.liste_acteurs, 
+.liste_livres {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.liste_acteurs *, 
+.liste_livres * {
+	margin: 0;
+	padding: 0;
+}
+
+.section_acteurs img,
+.section_livres img {
+	width: 150px;
+}
+
+.section_acteurs figcaption,
+.section_livres figcaption {
+	color: white;
+	font-style: italic;
+	text-align: center;
+}
+
+.section_acteurs figcaption > span,
+.section_livres figcaption > span {
+	text-transform: uppercase;
+}
+
+
+/* -- LIVRES-- */
+.liste_livres figure:nth-child(odd) img {
+	border: 4px solid orange;
+}
+
+.liste_livres figure:nth-child(even):hover figcaption {
+	background-color: purple;
+}
+
+
+/* FOOTER */
+footer {
+	font-size: 12px;
+	background-color: grey;
+	padding: 10px 0;
+	margin-top: 80px;
+}
+
+footer p {
+	text-align: center;
+	font-style: italic;
+	color: black;
+}

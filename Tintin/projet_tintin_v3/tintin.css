@@ -1,0 +1,129 @@
+/* GENERAL */
+/* écrivez votre CSS général ici (à partir de la V1) */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #858685;
+    color: lightgray;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: #F4C301;
+    font-weight: 1000;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h2 {
+    text-align: left;
+    font-weight: 1000;
+    font-size: 22px;
+    color: black;
+    background-color: #e4c95d;
+    padding: 4px 0 4px 20px;
+}
+
+.texte {
+    color: #796060;
+    font-size: 12px;
+}
+
+.texte::first-letter {
+    font-size: 24px;
+    color: #E4C95D;
+    font-weight: 1000;
+}
+
+ol li:hover {
+    background-color: #FFFF99;
+    color: black;
+}
+
+.fiche-film ol {
+    counter-reset: count;
+}
+
+/* on initialise et nomme un compteur */
+.fiche-film li {
+    list-style-type: none;
+    counter-increment: count;
+    /* on incrémente le compteur à chaque nouveau li */
+    margin-bottom: 10px;
+}
+
+.fiche-film li::before {
+    content: counter(count);
+    /* on affiche le compteur */
+    padding: 0 20px 6px;
+    margin-right: 8px;
+    vertical-align: top;
+    background: #678;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+}
+
+
+
+/* HEADER */
+/* écrivez votre CSS en rapport avec votre HEADER ici (à partir de la V2) */
+
+
+
+/* MAIN CONTAINER */
+/* écrivez votre CSS en rapport avec votre MAIN CONTAINER ici (à partir de la V2) */
+section {
+    margin-top: 60px;
+}
+
+main p::after {
+    content: " Read more";
+    color: rgb(199, 199, 235);
+    text-decoration: underline;
+}
+
+section:nth-last-of-type(1) {
+    background-color: #74615b;
+    border: 4px dotted red;
+    padding: 20px;
+    width: 250px;
+}
+
+section:nth-last-of-type(2) {
+    background-color: #339e43;
+}
+
+section:nth-last-of-type(3) {
+    background-color: #6b6b2a;
+}
+
+section:nth-last-of-type(4) {
+    background-color: #e29fe2;
+}
+
+section:nth-last-of-type(5) {
+    background-color: #afbbce;
+}
+
+section:nth-last-of-type(6) {
+    background-color: #426e53;
+}
+
+
+/* FOOTER */
+/* écrivez votre CSS en rapport avec votre FOOTER ici (à partir de la V2) */
+footer p {
+    text-align: center;
+    font-style: italic;
+}
+footer{
+    padding: 10px 0;
+    margin-top: 80px;
+}

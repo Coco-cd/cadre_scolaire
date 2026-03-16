@@ -1,0 +1,254 @@
+/* ========== GLOBAL ========== */
+
+body {
+    background-color: #141414;
+    color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========== HEADER ========== */
+
+header {
+    padding: 20px 40px 20px 40px;
+    border-bottom: solid;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header .main-nav {
+    display: flex;
+}
+
+header .main-nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header .sub-nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: auto;
+}
+
+h1 {
+    display: none;
+}
+
+nav li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white
+}
+
+header a:hover {
+    color: #e50914;
+}
+
+header i:hover {
+    color: #e50914;
+}
+
+
+/* ========== MAIN ========== */
+
+main {
+    width: 1240px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section h2 {
+    padding-bottom: 10px;
+
+}
+
+section+section {
+    padding-top: 50px;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.card .infos {
+    background-color: #323232;
+    padding: 10px 10px 10px;
+    position: absolute;
+    width: 100%;
+    border-radius: 4px;
+
+    /* hidden state */
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 100ms;
+}
+/* When hovering the whole card, reveal infos */
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    z-index: 2;
+    transition: all 100ms;
+}
+
+/* reveal infos on hover */
+.card:hover .infos {
+    opacity: 1;
+    visibility: visible;
+    max-height: 400px;
+
+}
+
+.card img {
+    width: 295px;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.card:hover {
+    cursor: pointer;
+    border-bottom: none;
+    transform: scale(1.3);
+}
+
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.card .reco {
+    color: #19E45D;
+    margin-bottom: 6px;
+}
+
+.card .play-button {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card i {
+    color: #323232;
+    font-size: 15px;
+    display: flex;
+}
+
+.card .video-bar {
+    margin-left: 10px;
+    height: 2px;
+    background-color: #e50914;
+    flex: 1;
+}
+
+.card .player {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* ========== FOOTER ========== */
+
+footer {
+    /* layout */
+    max-width: 1080px;
+    width: 100%;
+    margin: 50px auto 0;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+    /* visual */
+    text-align: center;
+    color: #f3f3f3;
+
+    /* flex column to stack logo / menus / note */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+}
+
+footer a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e50914;
+    text-decoration: underline;
+}
+
+/* logos and menu layout */
+footer .logo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Make the footer-menu container distribute article columns */
+footer .footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+/* each article becomes a vertical column of links */
+footer .footer-menu article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: flex-start;
+    flex: 1 1 0;
+    min-width: 160px;
+    max-width: 260px;
+}
+
+footer .footer-menu a {
+    color: #f3f3f3;
+    text-decoration: underline;
+    display: inline-block;
+    padding: 4px 0;
+}
+
+footer .footer-menu a:hover {
+    color: #e50914;
+    text-decoration: underline;
+}

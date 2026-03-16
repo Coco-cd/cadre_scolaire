@@ -1,0 +1,118 @@
+/* ========== GLOBAL ========== */
+
+body {
+    background-color: #141414;
+    color: #f3f3f3;
+}
+
+/* ========== HEADER ========== */
+
+header {
+    padding: 20px 40px 20px;
+    border-bottom: solid;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+}
+
+h1 {
+    display: none;
+}
+
+/* ========== MAIN ========== */
+
+main {
+    width: 1240px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section h2 {
+    padding-bottom: 10px;
+
+}
+
+section+section {
+    padding-top: 50px;
+}
+
+.card-wrapped {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.card img {
+    width: 295px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.card .infos,
+.info {
+    flex: 1;
+    background-color: #323232;
+    padding: 10px 10px 10px;
+    margin-top: -5px;
+    border-radius: 4px;
+}
+
+.card .reco {
+    color: #19E45D;
+    margin-bottom: 6px;
+}
+
+.card .player-button {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card i {
+    color: #323232;
+    font-size: 15px;
+    display: flex;
+}
+
+.card .video-bar {
+    margin-left: 10px;
+    height: 2px;
+    background-color: #e50914;
+    flex: 1;
+}
+
+.card .player {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* ========== FOOTER ========== */
+
+footer {
+    width: 1080px;
+    margin-top: 50px;
+    padding: 20px 200px 20px;
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
