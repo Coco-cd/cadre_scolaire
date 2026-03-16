@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Exercice 7c - sélecteurs</title>
+	<style>
+		body,
+		h1,
+		h2,
+		p {
+			padding: 8px;
+			font-size: 24px;
+		}
+
+		body {
+			border: 5px solid green;
+			margin: 30px;
+		}
+
+		div {
+			border: 5px solid blue;
+			margin: 10px;
+			background-color: #EFEFEF;
+			color: blue;
+		}
+
+		h1 {
+			border: 5px solid yellow;
+		}
+
+		p {
+			border: 5px solid #FFA500;
+		}
+		button {
+    background-color: aqua;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+	</style>
+</head>
+
+<body>
+	<div class="premiere_div">
+		<!-- Mettez le texte du h1 ci-dessous en purple -->
+		<h1>Mon titre h1 dans la div</h1>
+		<!-- Mettez le paragraphe ci-dessous avec un arrière-plan bleu clair -->
+		<p class="paragraphe">1er paragraphe dans la div avec une classe</p>
+		<!-- Mettez le texte du paragraphe ci-dessous en rouge -->
+		<p id="paragraphe_id">2è paragraphe dans la div avec un id (attention : il est déconseillé d'utiliser les "id" pour styliser un texte comme nous sommes en train de faire..)</p>
+		<p>Un troisieme paragraphe dans la div sans classe ni id</p>
+	</div>
+
+	<!-- Mettez le texte du h1 ci-dessous en orange -->
+	<h1>Titre h1 en dehors de la div (attention : normalement nous devons mettre un h1 par page web, pas comme ici..)</h1>
+	<!-- Mettez le texte du paragraphe ci-dessous en jaune -->
+	<p>Un paragraphe en dehors de la div</p>
+	<footer>
+        <button onclick="window.location.href='../../exercice.html'">Retour à la page principale</button>
+    </footer>
+</body>
+
+</html>

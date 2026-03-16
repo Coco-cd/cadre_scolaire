@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouvez les chemins</title>
+    <style>
+        button {
+            background-color: aqua;
+            border: none;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercice : Trouvez les chemins</h1>
+
+
+    <h2>Page d'accueil</h2>
+
+    <p><i>Suivez les commentaires de chaque page HTML pour compléter l'exercice.</i></p>
+
+    <hr />
+
+    <header>
+        <!-- Trouvez le chemin relatif qui permet d'afficher le logo -->
+        <img src="images/logo.png" alt="Logo" />
+    </header>
+
+    <nav>
+        <!-- Trouvez le chemin relatif qui permet d'accéder à la page d'accueil -->
+        <p><b>Lien vers la page : </b><a href="index.html">accueil</a></p>
+
+        <!-- Trouvez le chemin relatif qui permet d'accéder à la page "équipe" -->
+        <p><b>Lien vers la page : </b><a href="pages/equipe.html">équipe</a></p>
+
+        <!-- Trouvez le chemin relatif qui permet d'accéder à la page "contact" -->
+        <p><b>Lien vers la page : </b><a href="pages/contact.html">contact</a></p>
+
+        <!-- Trouvez le chemin relatif qui permet d'accéder à la page "chat_1" -->
+        <p><b>Lien vers la page : </b><a href="pages/chats/chat_1.html">chat_1</a></p>
+
+        <!-- Trouvez le chemin relatif qui permet d'accéder à la page "chat_2" -->
+        <p><b>Lien vers la page : </b><a href="pages/chats/chat_2.html">chat_2</a></p>
+
+        <!-- Trouvez le chemin relatif qui permet d'accéder à la page "chat_3" -->
+        <p><b>Lien vers la page : </b><a href="pages/chats/chat_3.html">chat_3</a></p>
+    </nav>
+
+    <hr />
+
+    <section>
+        <p>Liste de nos membres :</p>
+        <ul>
+            <li>
+                <h3>Membre 1 :</h3>
+                <!-- Trouvez le chemin relatif qui permet d'afficher la photo du membre 1 -->
+                <img src="images/membres/membre_1.jpg" alt="Photo d'un membre" width="200" />
+            </li>
+            <li>
+                <h3>Membre 2 :</h3>
+                <!-- Trouvez le chemin relatif qui permet d'afficher la photo du membre 2 -->
+                <img src="images/membres/membre_2.jpg" alt="Photo d'un membre" width="200" />
+            </li>
+            <li>
+                <h3>Membre 3 :</h3>
+                <!-- Trouvez le chemin relatif qui permet d'afficher la photo du membre 3 -->
+                <img src="images/membres/membre_3.jpg" alt="Photo d'un membre" width="200" />
+            </li>
+        </ul>
+    </section>
+    <hr />
+    <section>
+        <!-- Trouvez le chemin absolu qui permet d'accéder au site de l'IUT, page web qu'on ouvrira dans un nouvel onglet -->
+        <p>Lien vers la page de l'<a href="https://iuthaguenau.unistra.fr">IUT de Haguenau</a></p>
+    </section>
+
+    <footer>
+        <button onclick="window.location.href='../exercice.html'">Retour à la page principale</button>
+    </footer>
+</body>
+
+</html>
