@@ -1,0 +1,39 @@
+{% extends "base.twig" %}
+
+
+
+{% block main %}
+<aside class="steam-link">
+    <a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/" target="_blank">
+        <img src="images/ets2.jpg" alt="Steam">
+        <span>Disponible sur Steam</span>
+    </a>
+</aside>
+<h1>Le gameplay</h1>
+<ul class="menu">
+    {% for element in gameplay %}
+    <li><a href="#{{element.id}}">{{element.titre}}</a></li>
+    {% endfor %}
+</ul>
+{% for element in gameplay %}
+
+<div class="gameplay">
+    <div class="haut-gauche">
+        <img src="{{ element.image1 }}" alt="{{ element.alt1 }}">
+    </div>
+    <div class="haut-droite">
+        <img src="{{ element.image2 }}" alt="{{ element.alt2 }}">
+    </div>
+    <div class="bas-gauche">
+        <img src="{{ element.image3 }}" alt="{{ element.alt3 }}">
+    </div>
+    <div class="bas-droite">
+        <img src="{{ element.image4 }}" alt="{{ element.alt4 }}">
+    </div>
+    <h2>{{element.titre}}</h2>
+    <p>{{element.commentaire}}</p>
+</div>
+{% endfor %}
+{% endblock main %}
+
+{% block title %}Gameplay{% endblock title %}

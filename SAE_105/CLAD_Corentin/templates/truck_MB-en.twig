@@ -1,0 +1,44 @@
+{% extends "base-en.twig" %}
+
+{% block main %}
+</div>
+<h1>Trucks in Euro Truck Simulator 2</h1>
+    <p>
+        In Euro Truck Simulator 2, trucks are your essential work tool for carrying out cargo deliveries across Europe
+        and generating revenue. Each truck has specific characteristics (engine power, fuel tank capacity, chassis type)
+        that directly influence your performance and profitability.
+    </p>
+    <p>
+        Your choice of truck depends on your experience level and budget. More powerful models are more expensive but allow
+        for faster and more profitable deliveries. Some trucks require reaching a specific unlock level, while older models
+        are only available on the second-hand market.
+    </p>
+    <ul class="menu">
+        {% for element in truck %}
+        <li><a href="#{{element.id}}">{{element.titre}}</a></li>
+        {% endfor %}
+    </ul>
+<div class="camions-container">
+    {% for element in truck %}
+    <div class="camion">
+        <img src="{{ element.logo }}" alt="{{ element.marque }} Logo" class="logo">
+        <div class="camion-info">
+            <h2 id="{{element.id}}">{{ element.titre }}</h2>
+            <img src="{{ element.image }}" alt="{{ element.titre }}">
+            <h3>{{ element.titre_moteur }}</h3>
+            <p>{{ element.moteur }}</p>            
+            <h3>{{ element.titre_essence }}</h3>
+            <p>{{ element.essence }}</p>            
+            <h3>{{ element.titre_modele }}</h3>
+            <p>{{ element.modele }}</p>            
+            <h3>{{ element.titre_niveau }}</h3>
+            <p>{{ element.niveau }}</p>            
+            <h3>{{ element.titre_prix }}</h3>
+            <p>{{ element.prix }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock main %}
+
+{% block title %}Mercedes Benz Truck{% endblock title %}
