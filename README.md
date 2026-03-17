@@ -27,4 +27,4 @@ Formation axée sur le multimédia, le web et la communication numérique.
 
 Réalisé avec passion (et quelques nuits blanches) ☕
 
-pour voir les différent projet réalisé faut juste changé de branches
+Pour voir les différent projet réalisé faut juste changé de branches
